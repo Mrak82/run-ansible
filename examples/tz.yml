@@ -1,0 +1,10 @@
+---
+- name: Change TZ
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Change Time zone
+      community.general.timezone:
+        name: Europe/Moscow
+...
